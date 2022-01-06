@@ -1,0 +1,479 @@
+25:46
+
+Homework Questions:
+
+Number 1:
+Q)PRINT
+1
+2 3
+4 5 6
+7 8 9 10
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n"<<endl;
+	cin>>n;
+	int row=1;
+	int count=1;
+	while(row<=n)
+	{
+		int col=1;
+		while(col<=row)
+		{
+			cout<<count<<" ";
+			count=count+1;
+			col=col+1;
+		}
+		cout<<endl;
+		row=row+1;
+	}
+}
+
+Number 2:
+Q)PRINT
+1
+2 3
+3 4 5
+4 5 6 7
+5 6 7 8 9
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Value of n is?:"<<endl;
+	cin>>n;
+	int row=1;
+	while(row<=n)
+	{
+		int col=1;
+		int Saaragame=row-col+1;
+		while(col<=row)
+		{
+			cout<<Saaragame<<" ";
+			Saaragame=Saaragame+1;
+			col=col+1;
+			
+			
+		}
+		cout<<endl;
+		row=row+1;
+	}
+}
+
+
+
+Number 3:
+Q)PRINT
+A B C
+A B C
+A B C
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int j=1;
+		while(j<=n)
+		{
+			char ch='A'+j-1;
+			cout<<ch<<" ";
+			j=j+1;
+		}
+		cout<<endl;
+		i=i+1;
+	}
+}
+
+
+Number 4:
+Q)PRINT
+A B C D
+E F G H
+I  J  K  L
+M N O P
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	char ch='A';
+	while(i<=n)
+	{
+		int j=1;
+		while(j<=n)
+		{
+			cout<<ch<<" ";
+			ch=ch+1;
+			j=j+1;
+		}
+		cout<<endl;
+		i=i+1;
+		
+	}
+}
+
+Number 5:
+Q)PRINT
+A B C
+B C D
+C D E
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int j=1;
+		while(j<=n)
+		{
+			char ch='A'+i+j-2;
+			cout<<ch<<" ";
+			ch=ch+1;
+			j=j+1;
+		}
+		cout<<endl;
+		i=i+1;
+	}
+}
+
+Number 6:
+Q)PRINT
+A
+B B
+C C C
+D D D D
+
+
+CODE:
+#include<iostream>
+using namespace std;
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	char ch='A';
+	while(i<=n)
+	{
+		int j=1;
+		while(j<=i)
+		{
+			cout<<ch<<" ";
+			j=j+1;
+		}
+		ch=ch+1;
+		cout<<endl;
+		i=i+1;
+		
+	}
+}
+
+Number 7:
+Q)PRINT
+****
+***
+**
+*
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int j=1;
+		int star=n-i+1;
+		while(star)
+		{
+			cout<<'*';
+			star=star-1;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+Number 8:
+Q)PRINT
+****
+ ***
+  **
+   *
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int space=i-1;
+		while(space)
+		{
+			cout<<" ";
+			space=space-1;
+		}
+		int j=1;
+		int star=n-i+1;
+		while(star)
+		{
+			cout<<'*';
+			star=star-1;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+Number 9:
+Q)PRINT
+1111
+  222
+    33
+      4
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int space=i-1;
+		while(space)
+		{
+			cout<<" ";
+			space=space-1;
+		}
+		int j=1;
+		int Num=n-i+1;
+		while(Num)
+		{
+			cout<<i;
+			Num=Num-1;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+Number 10:
+Q)PRINT
+      1 
+    22
+  333
+4444
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int space=n-i;
+		while(space)
+		{
+			cout<<" ";
+			space=space-1;
+		}
+		int j=1;
+		while(j<=i)
+		{
+			cout<<i;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+Number 11:
+Q)PRINT
+1234
+  234
+    34
+      4
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		int space=i-1;
+		while(space)
+		{
+			cout<<" ";
+			space=space-1;
+		}
+		int j=1;
+		int Num=i;
+		while(j<=n-i+1)
+		{
+			cout<<Num;
+			Num=Num+1;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+
+Number 12:
+Q)PRINT
+       1
+     23
+   456
+78910
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	int count=1;
+	while(i<=n)
+	{
+		int space=n-i;
+		while(space)
+		{
+			cout<<" ";
+			space=space-1;
+		}
+		int j=1;
+		while(j<=i)
+		{
+			cout<<count;
+			count=count+1;
+			j=j+1;
+		}
+		
+		cout<<endl;
+		i=i+1;
+	}
+	
+}
+
+Number 13:(MAHARATHI PROBLEM)
+Q)PRINT
+1 2 3 4 5 5 4 3 2 1
+1 2 3 4 * * 4 3 2 1
+1 2 3 * * * * 3 2 1
+1 2 * * * * * * 2 1
+1 * * * * * * * * 1
+
+CODE:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout<<"Enter the value of n:"<<endl;
+	cin>>n;
+	int i=1;
+	while(i<=n)
+	{
+		
+		int j=1;
+		while(j<=n-i+1)
+		{
+			cout<<j<<" ";
+			j=j+1;			
+		}
+		int star=2*i-2;
+		while(star)
+		{
+			cout<<'*'<<" ";
+			star=star-1;
+		}
+	
+		int j1=1;
+		int n1=n-i+1;
+		while(n1)
+		{
+			cout<<n1<<" ";
+			n1=n1-1;
+			j1=j1+1;
+		}
+		
+		cout<<endl;
+	    i=i+1;
+	}
+	
+}
+
+
+
+
+
+
+
